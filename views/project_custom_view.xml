@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_task_form_inherit" model="ir.ui.view">
+         <field name="name">view.project.task.form.inherit</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_form2"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group//field[@name='user_ids']" position="after">
+                <field name="date_start1"/>
+                <field name="date_end1"/>
+            </xpath>
+        </field>
+    </record>
+     <menuitem id="wb_project_custom_menu" name="project_custom" sequence="10"/>
+
+</odoo>
