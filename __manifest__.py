@@ -20,6 +20,6 @@ Project Custom module
         'reports/project_custom.xml',
     ],
     'installable': True,
-    'application': True,
+    'application': False,
     'license': 'LGPL-3',
 }
